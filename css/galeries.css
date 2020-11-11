@@ -1,0 +1,197 @@
+/* ==================================================
+   PAGE GALERIES
+================================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+ 	only screen and (-moz-min-device-pixel-ratio: 2),
+ 	only screen and (min-device-pixel-ratio: 2),
+ 	only screen and (min-resolution: 2dppx) {
+	
+	}
+
+@media screen and (min-width: 320px) and (max-width: 375px) and (orientation: portrait) {	
+
+    header{
+        width:100%;
+        height:54px;
+        position: fixed;
+        top:0;
+        left:0;
+        background: url(../img/mobile/logo3.svg) rgba(0, 0, 0, 1) no-repeat 15px 15px;
+        background-size: 213px 22px;
+        z-index: 1000;
+    }
+
+    nav#menu{
+        display:none; 
+    } 
+
+/* ==================================================
+   Mobile Menu Navigation
+================================================== */
+
+  #mobile-nav{
+        display:block;
+        float: right;
+    }
+
+    #menu-nav-mobile{
+        position:absolute;
+        width:100%;
+        height:100vh;
+        top:0;
+        left:0;
+  
+        background: url(../img/logo1-ac-vect.svg), url(../img/mobile/mobile_arabesque1.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position:top center, bottom left;
+        background-size: 170px 88px, 113px 330px;
+        background-position-x: center, -24px;
+        background-position-y: 15px, bottom;
+    }
+
+    .menu-nav{     
+        background: url(../img/hamburger-icon.svg) no-repeat 0 0;
+        width: 25px;
+        height:25px;
+        display: block;
+        position: fixed;
+        right:15px;
+        top: 15px;
+        z-index: 1001;
+		      transform: rotate(0deg);
+		   transition: transform 300ms ease-out 0s;
+    }
+
+    .menu-nav.open {         
+        background: url(../img/cross-icon.svg) no-repeat 0 0;
+        width:25px;
+        height:25px;
+        display: block;
+        z-index: 1002;
+        transform: rotate(-180deg);
+        transition: transform 300ms ease-out 0s;	
+    }
+
+    #navigation-mobile {             /* partie (#navigation-mobile) de css d'appel par js  => page Menu cachée */
+        display: none;
+        position:fixed;
+        top:0;
+        right:-100%;
+        z-index: 700;
+
+        background: url(../img/angeliquecalfatidotcom_motif-n.gif) repeat 0 0;
+        background-size: 8px 8px;
+        width:100%;
+        height:568px;
+    }
+
+    .select {             
+        -webkit-animation: moveToLeftFade .7s ease both;
+        animation: moveToLeftFade .7s ease both;
+    }
+
+    @-webkit-keyframes moveToLeftFade {
+        from { }
+        to { opacity: 1; -webkit-transform: translateX(-100%); }
+    }
+
+    @keyframes moveToLeftFade {
+        from { }
+        to { opacity: 1; transform: translateX(-100%); }
+    }
+
+    .close {             
+    
+        -webkit-animation: moveFromLeftFade .5s ease both;
+        animation: moveFromLeftFade .5s ease both;
+    }
+
+    @-webkit-keyframes moveFromLeftFade {
+        from { opacity: 0.3; -webkit-transform: translateX(-100%); }
+    }
+    @keyframes moveFromLeftFade {
+        from { opacity: 0.3; transform: translateX(-100%); }
+    } 
+
+
+    #navigation-mobile li {
+        list-style: none;
+    }
+    
+    #navigation-mobile li a{
+        font-family: 'Crimson Text';
+        font-weight: 600;
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color:rgba(224, 220, 204, 0.6);
+    }
+
+    #navigation-mobile li:first-child{
+        margin-top: 142px;
+    }
+
+    #navigation-mobile li a:hover{
+        color:#e0dccc;
+    }
+    #navigation-mobile li a:active,
+    #navigation-mobile li a.current{
+        color:#fffae4;
+    }
+
+/* ==================================================
+   Page Galerie
+================================================== */
+
+    #bloc-galeries{
+        position :relative;
+        background:url(../img/angeliquecalfatidotcom_motif-n.gif) repeat left top;
+        background-size:8px 8px;
+        width:100%;
+        height:100vh;
+        padding-top:38px;
+    }
+
+    h3.galerie-p1{
+        padding:30px 15px 19px;
+        font-weight: 500;
+    }
+
+    p.galerie-p1{
+        padding:10px 15px 10px;
+        font-weight: 500;
+        color:#e0dccc;
+        font-size:12px;
+        line-height: 18px;
+        width:100%;
+        height:105px;
+        background-color:#730012;
+    }
+
+    .galerie-p1 span{
+        font-weight: 600;
+    }
+
+    p.galerie-p2{
+        padding:0 15px;
+        font-weight: 500;
+        color:#e0dccc;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 834px) and (orientation: portrait){	
+
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px) and (orientation: portrait) {	
+
+}
+
+@media screen and (min-width: 1367px) and (max-width: 1920px) and (orientation: landscape) {
+
+    
+}

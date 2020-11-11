@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angélique Calfati : Costumière</title>
+    <meta name="description" content="Angélique Calfati : Créatrice et réalisatrice de costumes de scène | Chapeaux et accessoires | Formatrice et animatrice d'ateliers">
+    <meta content="Gildas Decauville Lachènée" name="author">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/galeries.css">
+</head>
+<body>
+    <section id="work">
+        <header>
+            <div class="logo1"></div>
+            <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a> <!-- id=mobile-nav désigne le display de la version mobile du menu // .menu-nav est l'icon hamburger-->
+            <div class="sticky-nav logo3"> </div><!-- class dénommée en fonction du waypoint (js) d'appel pour appliquer le menu fixe (avec .stuck) selon l'évvénement scroll avec le logo3 (sans baseline et sans arabesque pour mobile... logo2 pour tablette et desktop) -->
+                <nav id="menu"> <!-- id, spécifié pour le display de la version desktop du menu-->
+                    <ul id="menu-nav"> <!-- appel de l'id "menu-nav" placé ici (l'id ne sert pas sans ce lien), en relation avec le href de 'a' 'id' "mobile-nav" -->
+                        <li><a href="index.html#home">ACCUEIL<br><img src="img/mobile/mobile-menu-arabesque_fffae4.png"></a></li>
+                        <li><a href="#shop">BOUTIQUE<br><img src="img/mobile/mobile-menu-pattern_4e473e.png"></a></li>
+                        <li><a href="#news">ATELIERS<br><img src="img/mobile/mobile-menu-arabesque_4e473e.png"></a></li>
+                        <li><a href="#service">SERVICES<br><img src="img/mobile/mobile-menu-pattern_4e473e.png"></a></li>
+                        <li><a class="current" href="#work">GALERIES<br><img src="img/mobile/mobile-menu-arabesque_4e473e.png"></a></li>
+                        <li><a href="#about">ACTIVITÉS<br><img src="img/mobile/mobile-menu-pattern_4e473e.png"></a></li>
+                        <li><a href="#contact">CONTACT<br><img src="img/mobile/mobile-menu-arabesque_4e473e.png"></a></li>
+                    </ul>
+                </nav>
+        </header>
+
+            <div id="bloc-galeries">
+                <h3 class="galerie-p1">Une galerie des costumes en vidéo</h3>
+                <p class="galerie-p1">
+                    <span style="color:#FFFae4">2010 | </span>RENCONTRE ANODINE<br>
+                    <br>
+                    <span style="color:#FFFae4">CATÉGORIE : </span>AUDIOVISUELLE<br>
+                    <span style="color:#FFFae4">RÉALISATRICE : </span>FLORIANE GIORDANA<br>
+                    <span style="color:#FFFae4">PRODUCTION : </span>EVDLUNE PROD<br>
+                </p>
+                <p class="galerie-p2">
+                    Ce court-métrage est une comédie absurde, muet, en noir et blanc.<br>
+                    Vous vous retrouvez nez-à-nez avec un étranger qui vous emboite le pas.<br>
+                    <br>
+                    Voici le making-of du court-métrage.
+                </p>
+                    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> 
+                        <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/xpx4lv" width="100%" height="100%" allowfullscreen > </iframe> 
+                    </div>
+            </div>
+    </section> 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.waypoints.js"></script>
+    <script src="js/sticky.js"></script>
+    <script src="js/main.js"></script> 
+</body>
+</html>              
